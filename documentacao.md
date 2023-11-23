@@ -2,9 +2,10 @@
 
 ## 1. Introdução
 
-A estrutura de dados desempenha um papel fundamental no desenvolvimento de software, influenciando diretamente o desempenho e a eficiência das operações realizadas sobre os dados. Uma escolha cuidadosa da estrutura é essencial para atender aos requisitos específicos de cada aplicação. Neste contexto, a árvore binária de busca surge como uma opção versátil para operações de inserção, busca e remoção, proporcionando uma ordenação automática dos elementos.
+A estrutura de dados desempenha um papel importante e fundamental no requisito desenvolvimento de software, influenciando diretamente o desempenho e principalmente a eficiência das operações realizadas sobre os dados fornecidos nos algoritmos. Uma escolha cuidadosa da estrutura é essencial para atender aos requisitos específicos de cada aplicação que venha a ser escolhida dependendo de cada caso. Neste contexto, a árvore binária de busca surge como uma opção versátil para operações de inserção, busca e remoção, proporcionando uma ordenação automática dos elementos inseridos. 
 
-Este trabalho apresenta uma análise crítica da eficiência da árvore binária de busca, destacando seus pontos fortes e identificando áreas que podem ser aprimoradas. O código-fonte implementado em linguagem C é explorado em detalhes, considerando sua clareza, modularidade e possíveis melhorias. Exemplos de utilização prática são apresentados, demonstrando a interatividade da implementação e a facilidade de operação por parte do usuário.
+Este trabalho apresenta uma análise crítica da eficiência da árvore binária de busca, destacando principalmente seus pontos fortes e identificando áreas que podem ser aprimoradas. O código-fonte implementado em linguagem C é explorado em detalhes, considerando sua clareza e fácil entendimento para melhor compreensão do código em si. 
+
 
 ## 2. Operações Básicas na Árvore Binária
 
@@ -18,7 +19,8 @@ Este trabalho apresenta uma análise crítica da eficiência da árvore binária
 ### Pontos Fortes
 
 - **Inserção e Busca Eficientes:** A inserção e busca em uma árvore binária de busca têm uma complexidade média de O(log n) em árvores balanceadas, o que é eficiente, onde n é o número de nós da árvore.
-- **Ordenação Automática:** A árvore binária de busca mantém todos os elementos de forma ordenada automaticamente, para que assim tenha uma maior facilidade na busca ordenada de seus valores.
+- **Ordenação Automática:** A árvore binária de busca mantém todos os elementos de forma ordenada automaticamente, para que assim tenha uma maior facilidade na busca ordenada de seus valores e uma melhor compreensão pela busca de algum valor específico na árvore. 
+
 
 ### Pontos Fracos
 

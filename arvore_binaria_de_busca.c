@@ -111,6 +111,20 @@ void inorderTraversal(Node* root) {
     }
 }
 
+// Função para calcular a altura da árvore
+int height(Node* root) {
+    if (root == NULL) {
+        return 0;
+    } else {
+        // Calcula a altura da subárvore esquerda e direita
+        int leftHeight = height(root->left);
+        int rightHeight = height(root->right);
+        
+        // Retorna a altura máxima entre a subárvore esquerda e direita, acrescida de 1 (altura do nó atual)
+        return (leftHeight > rightHeight) ? (leftHeight + 1) : (rightHeight + 1);
+    }
+}
+
 // Função principal para testar a árvore binária de busca
 int main() {
     Node* root = NULL;
@@ -122,7 +136,8 @@ int main() {
         printf("2. Remover\n");
         printf("3. Buscar\n");
         printf("4. Imprimir em ordem\n");
-        printf("5. Sair\n");
+        printf("5. Altura da árvore\n");
+        printf("6. Sair\n");
         printf("\nEscolha uma opção: ");
         scanf("%d", &choice);
 
@@ -160,6 +175,11 @@ int main() {
                 break;
 
             case 5:
+                // Calcular a altura da árvore
+                printf("Altura da árvore: %d\n", height(root));
+                break;
+
+            case 6:
                 // Sair do programa
                 printf("Encerrando o programa.\n");
                 break;
@@ -169,7 +189,7 @@ int main() {
                 printf("Opção inválida. Tente novamente.\n");
         }
 
-    } while (choice != 5);
+    } while (choice != 6);
 
     return 0;
 }
