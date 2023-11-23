@@ -83,3 +83,4 @@ A árvore binária de busca é uma estrutura bastante versátil, pois proporcion
 - GeeksforGeeks. "Insertion in a Binary Tree in level order." [Link](https://www.geeksforgeeks.org/insertion-in-a-binary-tree-in-level-order/?ref=lbp)
 - GeeksforGeeks. "Deletion in a binary tree." [Link](https://www.geeksforgeeks.org/deletion-binary-tree/?ref=lbp)
 - Feofiloff, P. "Como inserir e remover um nó de uma árvore binária de busca." Usp.Br. [Link](https://www.ime.usp.br/~pf/algoritmos/aulas/binst.html)
+- Stumm, V., Jr. (2015, January 19). Árvore Binária de Busca em Python. Python Help. [Link](https://pythonhelp.wordpress.com/2015/01/19/arvore-binaria-de-busca-em-python/)
