@@ -66,6 +66,11 @@ Este trabalho apresenta uma análise crítica da eficiência da árvore binária
 - **Testes em Cenários Extremos:**
   - É importante realizar testes em cenários extremos para avaliar como a árvore se comporta em situações de extremo limite, especialmente em termos de desbalanceamento onde sua complexidade se torna muito mais complexa de se analisar.
 
+## 6. Conclusão 
+
+A árvore binária de busca é uma estrutura versátil, proporcionando eficiência em operações com uma boa gestão do balanceamento. Vale ressaltar que entender suas características e limitações é extremamente essencial para uma boa escolha informada em cenários específicos. A implementação da árvore binária de busca em C apresenta uma solução eficiente para operações de inserção, remoção e busca, proporcionando ordenação automática dos elementos inseridos pelo usuário.
+
+
 ## Referências
 
 - GeeksforGeeks. "Introduction to binary tree - data structure and algorithm tutorials." [Link](https://www.geeksforgeeks.org/introduction-to-binary-tree-data-structure-and-algorithm-tutorials/?ref=lbp)
