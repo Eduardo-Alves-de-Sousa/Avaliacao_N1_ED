@@ -10,7 +10,9 @@ typedef struct Node {
 
 // Função para criar um novo nó
 Node* createNode(int key) {
+    // Aloca dinamicamente na memória para um novo nó
     Node* newNode = (Node*)malloc(sizeof(Node));
+    // Inicializa a chave e os ponteiros esquerdo e direito como valores nulos
     newNode->key = key;
     newNode->left = newNode->right = NULL;
     return newNode;
@@ -19,12 +21,15 @@ Node* createNode(int key) {
 // Função para inserir um nó na árvore
 Node* insert(Node* root, int key) {
     if (root == NULL) {
+        // Se a árvore estiver vazia, cria um novo nó
         return createNode(key);
     }
 
     if (key < root->key) {
+        // Se a chave for menor que a chave do nó atual, insere à esquerda
         root->left = insert(root->left, key);
     } else if (key > root->key) {
+        // Se a chave for maior que a chave do nó atual, insere à direita
         root->right = insert(root->right, key);
     }
 
@@ -34,6 +39,7 @@ Node* insert(Node* root, int key) {
 // Função para encontrar o nó com a chave mínima (usada na remoção)
 Node* findMin(Node* root) {
     while (root->left != NULL) {
+        // Percorre continuamente os nós mais à esquerda até encontrar o último nó
         root = root->left;
     }
     return root;
@@ -42,26 +48,35 @@ Node* findMin(Node* root) {
 // Função para remover um nó da árvore
 Node* removeNode(Node* root, int key) {
     if (root == NULL) {
+        // Se a árvore estiver vazia, retorna o nó atual
         return root;
     }
 
     if (key < root->key) {
+        // Se a chave for menor que a chave do nó atual, remove da subárvore esquerda
         root->left = removeNode(root->left, key);
     } else if (key > root->key) {
+        // Se a chave for maior que a chave do nó atual, remove da subárvore direita
         root->right = removeNode(root->right, key);
     } else {
+        // Se a chave for igual à chave do nó atual, executa a remoção
         if (root->left == NULL) {
+            // Se o nó tem apenas um filho ou nenhum filho à esquerda
             Node* temp = root->right;
             free(root);
             return temp;
         } else if (root->right == NULL) {
+            // Se o nó tem apenas um filho à esquerda
             Node* temp = root->left;
             free(root);
             return temp;
         }
 
+        // Se o nó tem dois filhos, encontra o sucessor in-order (mínimo na subárvore à direita)
         Node* temp = findMin(root->right);
+        // Copia a chave do sucessor in-order para o nó atual
         root->key = temp->key;
+        // Remove o sucessor in-order
         root->right = removeNode(root->right, temp->key);
     }
 
@@ -71,21 +86,27 @@ Node* removeNode(Node* root, int key) {
 // Função para buscar um nó na árvore
 Node* search(Node* root, int key) {
     if (root == NULL || root->key == key) {
+        // Se a árvore estiver vazia ou a chave for encontrada, retorna o nó atual
         return root;
     }
 
     if (key < root->key) {
+        // Se a chave for menor que a chave do nó atual, busca na subárvore esquerda
         return search(root->left, key);
     }
 
+    // Se a chave for maior que a chave do nó atual, busca na subárvore direita
     return search(root->right, key);
 }
 
 // Função para imprimir a árvore em ordem
 void inorderTraversal(Node* root) {
     if (root != NULL) {
+        // Realiza uma travessia em ordem na árvore
         inorderTraversal(root->left);
+        // Imprime a chave do nó atual
         printf("%d ", root->key);
+        // Continua a travessia na subárvore direita
         inorderTraversal(root->right);
     }
 }
