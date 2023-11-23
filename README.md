@@ -1,4 +1,5 @@
 # Avaliação de Estrutura de Dados.
+## Para implementação deste trabalho foi escolhido a Árvore Binaria de Busca.
 
 - Escolha entre fila, pilha, lista encadeada simples, lista duplamente encadeada, lista circular ou árvore binaria de busca.
 - Implemente os principais métodos (inserção, remoção, criação, busca e impressão) na estrutura escolhida.
