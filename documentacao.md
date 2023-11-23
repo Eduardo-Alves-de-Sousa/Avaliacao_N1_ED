@@ -54,7 +54,8 @@ Este trabalho apresenta uma análise crítica da eficiência da árvore binária
 - **Função para Impressão em Ordem (inorderTraversal):**
   - Realiza uma travessia em ordem na árvore, imprimindo os nós em ordem crescente.
 - **Função Principal (main):**
-  - Implementa um menu interativo que permite ao usuário realizar operações como inserir, remover, buscar e imprimir a árvore em ordem.
+  - Implementa um menu interativo que permite ao usuário realizar operações como inserir, remover, buscar e imprimir a árvore em ordem e até mesmo ver qual a altura da árvore de acordo com os valores fornecidos.
+
 
 ## 5. Resultados Obtidos nas Análises de Desempenho
 
