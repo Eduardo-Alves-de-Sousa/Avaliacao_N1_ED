@@ -70,7 +70,8 @@ Este trabalho apresenta uma análise crítica da eficiência da árvore binária
 
 ## 6. Conclusão 
 
-A árvore binária de busca é uma estrutura versátil, proporcionando eficiência em operações com uma boa gestão do balanceamento. Vale ressaltar que entender suas características e limitações é extremamente essencial para uma boa escolha informada em cenários específicos. A implementação da árvore binária de busca em C apresenta uma solução eficiente para operações de inserção, remoção e busca, proporcionando ordenação automática dos elementos inseridos pelo usuário.
+A árvore binária de busca é uma estrutura bastante versátil, pois proporciona com bastante eficiência as operações com uma boa gestão do balanceamento da árvore. Vale ressaltar que entender sua complexidade de maneira mais completa devemos utilizar valores e uma estrutura mais complexa para melhor compreensão do poder do algoritmo que é a árvore binária de busca, deve ser compreendido principalmente suas características e limitações é extremamente essencial para uma boa escolha informada em cenários específicos. A implementação da árvore binária de busca em C apresenta uma solução eficiente para operações de inserção, remoção e busca, proporcionando ordenação automática dos elementos inseridos pelo usuário.
+
 
 
 ## Referências
